@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+h1, h2, h6, p, li{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 96px !important;
+}
+.nav-wrapper{
+    background-color: #011C4D;
+    padding-inline: 32px;
+}
+
+
+
+.landing-section{
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-img-first{
+    background-image: url("https://images.pexels.com/photos/9895973/pexels-photo-9895973.jpeg?cs=srgb&dl=pexels-enzo-varsi-9895973.jpg&fm=jpg");
+    background-position: center;
+    background-size: 100vw;
+    object-fit: cover;
+}
+
+.landing-img-second{
+    background-image: url("/res/landImg2.jpg");
+    background-position: center;
+    background-size: 100vw;
+    object-fit: cover;
+}
+
+.blue-section{
+    background-color: #011C4D;
+}
+.dark h1, .dark h2, .dark h6, .dark p, .blue-section h2, .blue-section p{
+    color: white;
+}
+
+.white h2, .white p{
+    color: #2B2866;
+}
+
+.white h6, .blue-section h6{
+    color: #F32735;
+}
+
+.page-footer{
+    background-color: #011C4D !important;
+}
