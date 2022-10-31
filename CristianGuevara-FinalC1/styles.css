@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-nav img{
-    width: auto;
-    height: 36px;
+body{
+  background-color: #EDEDED;
 }
 
-h1, h2, h6, p, li{
+nav img{
+    width: auto;
+    max-height: 36px;
+    margin: 15px 15px 0 0;
+}
+
+h1, h2, h5, h6, p, li{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -50,7 +55,7 @@ h1{
     color: #2B2866;
 }
 
-.white h6, .blue-section h6{
+.white h6, .blue-section h6, .h6-red{
     color: #F32735;
 }
 
@@ -72,6 +77,12 @@ h1{
     background-color: rgb(189, 189, 189);
     width: 300px;
     height: 220px;
+}
+
+.service-item-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -137,4 +148,32 @@ h1{
   100% {
     transform: translate3d(0, 0, 0);
   }
+}
+
+
+
+.card{
+  width: 250px;
+}
+
+#product-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-section{
+  background-color: #d9d9d9;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+::placeholder{
+  color: #666666;
+}
+
+.main-row{
 }
