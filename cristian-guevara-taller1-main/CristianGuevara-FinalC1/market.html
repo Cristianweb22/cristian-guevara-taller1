@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carro - CCM</title>
+
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper">
+            <img src="/res/logo white.png" alt="">
+            <a href="#" class="brand-logo"><strong>CCM</strong></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="market.html">COMPRA TU VEHÍCULO</a></li>
+                <li><a href="#">TRABAJA CON NOSOTROS</a></li>
+                <li><a href="#">NOTICIAS</a></li>
+                <li><a href="#">CONTACTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container row">
+  <section class="col s6 offset-s3 search-section input-field">
+      <input type="text" placeholder="Qué estás buscando?" id="search-input">
+      <button id="search-button">click aqui</button>
+  </section>
+</div>
+
+
+<div class="row">
+  <div class="container">
+    <aside class="col s2 input-field">
+      <h6 class="h6-red">Vehículos de Carga</h6>
+      <p>## Resultados</p>
+      
+      <form action="#">
+        <!--label for="used">Trayectoria: </label></p-->
+        <input class="with-gap" name="group1" type="radio" checked> <span>Todos</span>
+        <input class="with-gap" name="group1" type="radio"> <span>Nuevos</span>
+        <input class="with-gap" name="group1" type="radio"> <span>Usados</span>
+      </form>
+
+      <!-- ESTO ES LO QUE NO AGARRA-->
+      <h6 class="h6-red">Tipo de Vehículo</h6>
+
+      <div class="browser-default">
+        <label for="vehType">Tipo de Vehiculo</label>
+        <select name="vehType" id="vehType" >
+          <option value="" selected disabled>Seleccione </option>
+        </select>
+      </div>
+      
+      <h6 class="h6-red">Tipo de Carrocería</h6>
+      <form action="#" id="bodyList">
+      </form>
+      
+    </aside>
+  </div>          
+      
+  <div class="container product-list-section"> 
+      <section class="col s10" id="product-list">
+          
+      </section>
+  </div>
+</div>
+     
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sede Principal</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="productList.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+</body>
+</html>
