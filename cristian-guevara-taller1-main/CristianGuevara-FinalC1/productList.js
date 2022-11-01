@@ -7,7 +7,8 @@ const products = [
         'km' : 100000,
         'foto' : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HMfgOf6-FMtIIN_t5IKYklBJbKdXUD-JTtfWxOugBg&s.jpg',
         'precio' : 120000000,
-        'tipo' : 'Camion'
+        'tipo' : 'Camion',
+        'isNuevo' : false
     }
     ,
     {
@@ -18,7 +19,8 @@ const products = [
         'km' : 160000,
         'foto' : 'https://dealers.rewebmkt.com/images/20220505010443-download-2.png',
         'precio' : 120000000,
-        'tipo' : 'Camion'
+        'tipo' : 'Camion',
+        'isNuevo' : false
     }
     ,
     {
@@ -29,7 +31,8 @@ const products = [
         'km' : 300000,
         'foto' : 'https://www.navitrans.com.co/portals/0/img/Vehiculos/International/MV/chasis%20mv.png',
         'precio' : 240000000,
-        'tipo' : 'Tractomula'
+        'tipo' : 'Tractomula',
+        'isNuevo' : false
     }
     ,
     {
@@ -40,7 +43,8 @@ const products = [
         'km' : 0,
         'foto' : 'https://http2.mlstatic.com/D_NQ_NP_735062-MCO52145998844_102022-O.webp',
         'precio' : 600000000,
-        'tipo' : 'Tractomula'
+        'tipo' : 'Tractomula',
+        'isNuevo' : true
     }
     ,
     {
@@ -61,7 +65,8 @@ const products = [
         'km' : 89000,
         'foto' : 'https://http2.mlstatic.com/D_NQ_NP_791252-MCO51446391510_092022-W.jpg',
         'precio' : 180500000,
-        'tipo' : 'Camioneta'
+        'tipo' : 'Camioneta',
+        'isNuevo' : false
     },
     {
         'marca' : 'Auteco',
@@ -70,8 +75,9 @@ const products = [
         'carroceria' : 'Motocarro',
         'km' : 0,
         'foto' : 'https://www.aktmotos.com/sites/default/files/motorcycles/images/_0002_mg_6708.jpg',
-        'precio' : 23000000,
-        'tipo' : 'Motocarro'
+        'precio' : 2300000,
+        'tipo' : 'Motocarro',
+        'isNuevo' : true
     },
     {
         'marca' : 'Ferrelaminas Mosquera',
@@ -81,7 +87,8 @@ const products = [
         'km' : 635214,
         'foto' : 'https://http2.mlstatic.com/D_NQ_NP_965373-MCO51759432251_092022-W.jpg',
         'precio' : 120000000,
-        'tipo' : 'Semirremolque'
+        'tipo' : 'Semirremolque',
+        'isNuevo' : false
     },
     {
         'marca' : 'Freightliner',
@@ -91,7 +98,8 @@ const products = [
         'km' : 0,
         'foto' : 'https://http2.mlstatic.com/D_NQ_NP_735062-MCO52145998844_102022-O.webp',
         'precio' : 400000000,
-        'tipo' : 'Tractomula'
+        'tipo' : 'Tractomula',
+        'isNuevo' : false
     }
 ];
 
@@ -132,11 +140,20 @@ const displayData = (data) => {
     });
 };
 
+// LLAMAR METODOS
+
 displayData(products);
 displayBodytype();
 displayVehType();
+console.log('total carros = ' + products.length)
 
-// ------- DISPLAY DE LOS TIPOS DE CARROCERIA EN FILTRO ASIDE
+// LISTENERS PARA FILTROS
+const keywordElem = document.getElementById('keyword')
+keywordElem.addEventListener('change', (event) => handleKeyword(keywordElem))
+
+
+
+// ESTABLECER LOS METODOS DE DISPLAY
 function displayBodytype(){
     const bodyArr = [];
     products.forEach((product) => {
@@ -177,6 +194,10 @@ function displayVehType(){
     })
 }
 
+//// METODOS DE EVENTOS
+function handleKeyword(event){
+//video minuto 39:30
+}
 
 // aqui inicializo el dropdown
 document.addEventListener('DOMContentLoaded', function() {
